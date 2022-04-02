@@ -3,6 +3,7 @@
 
 <head>
 <meta charset="UTF-8">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <style>
 
 div.center {
@@ -12,6 +13,29 @@ width: 70%;
 
 p.just {
 text-align: justify;
+}
+
+input[type=text], input[type=email] {
+width: 100%;
+padding: 8px 8px;
+box-sizing: border-box;
+border: 1px solid black;
+border-radius: 4px;
+}
+
+input[type=submit] {
+  background-color: lightblue;
+border: 1px solid black;
+border-radius: 4px;
+}
+
+textarea {
+width: 100%;
+padding: 8px 8px;
+box-sizing: border-box;
+border: 1px solid black;
+border-radius: 4px;
+resize:vertical;
 }
 
 </style>
@@ -67,9 +91,28 @@ Welcome to the Greater Montreal pen club, a place to meet and exchange with othe
     <h2>The Toronto pen show : October 30th 2022</h2>
     <p class="just">
   Scriptus is back at the Toronto Reference Library. For more information: 
-  <a href="https://scriptusinc.com/">Scriptus 2022</a>.
+  <a href="https://www.scriptusinc.com">Scriptus 2022</a>.
     </p>
   </div>
-    
+  <br/><br/>
+  
+  <div class="center">
+    <h2>Contact us</h2>
+    <form action="?" method="POST">
+      <p>Name:<br/>
+      <input type="text" id="name"/>
+      </p>
+      <p>Email:<br/>
+      <input type="email" id="email"/>
+      </p>
+      <p>Message:<br/>
+      <textarea rows="10" id="message"></textarea>
+      </p>
+      <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
+  </div>  
+ 
 </body>
 </html>
