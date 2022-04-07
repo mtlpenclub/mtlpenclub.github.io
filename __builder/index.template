@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Montreal Pen Club</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <meta charset="UTF-8">
+  <meta name="description" content="%%meta_desc%%" />
+
+  <style>
+    div.center {
+      margin: auto;
+      width: 70%;
+      text-align: justify;
+    }
+
+    div.right {
+      margin: auto;
+      width: 70%;
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="right">
+    <a href="%%lang_url%%">%%lang_text%%</a>
+  </div>
+
+  <div class="center">
+    <h1>%%intro_title%%</h1>
+  </div>
+
+  <div class="center">
+    <p>%%intro_text%%</p>
+  </div>
+  <br/> <!-- Adding some space -->
+
+  <div class="center">
+    <h2>%%discord_title%%</h2>
+    <p>%%discord_text%%</p>
+  </div>
+
+  <div class="center">
+    <h2>%%instagram_title%%</h2>
+    <p>%%instagram_text%%</p>
+  </div>
+
+  <div class="center">
+    <h2>%%meeting_title%%</h2>
+    <p>%%meeting_text%%</p>
+  </div>
+
+  <br/>
+  %%events%%
+</body>
+</html>
